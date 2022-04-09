@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar-menu {
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 80px;
+    background-color: #333;
+    font-size: 1.5rem;
+    color: #fff;
+    opacity: .8;
+
+}
+
+.nav-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+
+}
+
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #fff;
+
+}
+
+
+.drop-down {
+    cursor: pointer;
+}
+
+.drop-down-menu {
+    display: none;
+}
+
+.drop-down-display {
+    position: absolute;
+    list-style: none;
+    display: flex;
+    /* justify-content: space-evenly; */
+    flex-direction: column;
+    background-color: #507600;
+    width: 150px;
+    height: 20vh;
+
+}
+
+.drop-down-menu>li>a {
+    padding: 1rem 20;
+}
+
+/* .donate{
+
+} */
+
+.donate {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    background-color: #507600;
+    cursor: pointer;
+
+}
+
+.donate-button {
+    /* margin-right: -20rem; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 1.7rem;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    /* cursor: pointer;
+
+
+    text-transform: capitalize;
+    background-color: transparent; */
+
+
+
+}
