@@ -49,3 +49,20 @@ for (let item of items) {
         item.addEventListener('keypress', toggleSubMenu, false)
     }
 }
+
+
+//Close the dropdown menu from AnyWhere
+
+function closeSubMenu(e) {
+    if (menu.querySelector('.submenu-active')) {
+        let isClickedInside = menu.querySelector('.submenu-active').contains(e.target)
+
+        if (!isClickedInside & menu.querySelector('submenu-active')) {
+            menu.querySelector('.submenu-active').classList.remove('submenu-active')
+        }
+    }
+}
+
+// Event listeners
+
+document.addEventListener('click', closeSubMenu, false)
